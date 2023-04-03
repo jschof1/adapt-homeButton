@@ -4,10 +4,11 @@ import data from 'core/js/data';
 import location from 'core/js/location';
 import router from 'core/js/router';
 
-class HomeButton extends Backbone.Controller {
+class setHomeButtonUrl extends Backbone.Controller {
 
   initialize() {
     this.listenTo(Adapt, 'app:dataReady', this.onDataReady);
+    this.listenTo(Adapt, 'navigation:homeButton', this.onHomeButtonClick);
   }
 
   onDataReady() {
@@ -49,7 +50,8 @@ class HomeButton extends Backbone.Controller {
     const altText = (currentModelConfig?.alt || courseConfig?.alt || '');
     const $backButton = $('button[data-event="backButton"]');
     const $icon = $('<div>', { class: 'icon', 'aria-hidden': true });
-    const $homeButton = $('<button>', {
+    const customLink = this.currentModelConfig?._customLink || this.courseConfig?._customLink || '';
+    const $homeButton =  $('<button>', {
       attr: {
         'data-event': currentModelConfig?._redirectToId ? 'redirectedHomeButton' : 'homeButton'
       },
@@ -77,6 +79,14 @@ class HomeButton extends Backbone.Controller {
     }
   }
 
+  onHomeButtonClick() {
+    const customLink = this.currentModelConfig?._customLink || this.courseConfig?._customLink || '';
+    if (customLink) {
+      window.location.href = customLink;
+    } else {
+      router.navigateToHomeRoute();
+    }
+  }
 }
 
-export default new HomeButton();
+export default new setHomeButtonUrl();
