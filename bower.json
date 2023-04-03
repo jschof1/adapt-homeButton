@@ -1,22 +1,22 @@
 {
   "name": "setHomeButtonUrl",
-  "version": "1.0.7",
-  "framework": ">=5.19.1",
+  "version": "0.0.1",
+  "framework": ">=5",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cgkineo/setHomeButtonUrl.git"
+    "url": "git://github.com/jschof1/setHomeButtonUrl.git"
   },
-  "homepage": "https://github.com/cgkineo/setHomeButtonUrl",
-  "issues": "https://github.com/cgkineo/setHomeButtonUrl/issues/",
-  "extension": "homeButton",
-  "displayName": "Home Button",
+  "homepage": "https://github.com/jschof1/setHomeButtonUrl",
+  "issues": "https://github.com/jschof1/setHomeButtonUrl/issues/",
+  "extension": "setHomeButtonUrl.js",
+  "displayName": "setHomeButtonUrl.js",
   "description": "Add home button to course navigation. Allows hide or redirect of home button. Allows hide of back button.",
   "main": "/js/setHomeButtonUrl.js",
   "keywords": [
     "adapt-plugin",
     "adapt-extension"
   ],
-  "targetAttribute": "_homeButton",
+  "targetAttribute": "_setHomeButtonUrl",
   "license": "GPL-3.0",
   "private": true,
   "devDependencies": {
