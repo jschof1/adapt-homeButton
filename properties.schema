@@ -61,6 +61,14 @@
                   "inputType": "Text",
                   "validators": []
                 },
+                "_customLink": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Custom link for the home button",
+                  "inputType": "Text",
+                  "validators": []
+                },
                 "alt": {
                   "type": "string",
                   "required": false,
@@ -113,7 +121,7 @@
                   "title": "Redirect the home button to id",
                   "inputType": "Text",
                   "validators": []
-                },
+                }
               }
             }
           }

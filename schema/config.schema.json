@@ -13,11 +13,6 @@
           "title": "Home Button",
           "default": {},
           "properties": {
-            "_customLink": {
-              "type": "string",
-              "title": "Custom link for the home button",
-              "default": ""
-            },
             "_isEnabled": {
               "type": "boolean",
               "title": "Enable control of the home button globally",
