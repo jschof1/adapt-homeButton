@@ -16,7 +16,7 @@
     "adapt-plugin",
     "adapt-extension"
   ],
-  "targetAttribute": "_homeButton",
+  "targetAttribute": "_setHomeButtonUrl",
   "license": "GPL-3.0",
   "private": true,
   "devDependencies": {
