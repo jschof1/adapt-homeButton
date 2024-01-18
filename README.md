@@ -1,6 +1,6 @@
-# adapt-homeButton
+# adapt-homeButton-url
 
-Add home button to course navigation. Allows hide or redirect of home button. Allows hide of back button.
+Add home button to course navigation. Allows hide or redirect of home button. Allows hide of back button. Added functionality of home button to direct to a URL.
 
 ## Settings
 
